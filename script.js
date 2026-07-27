@@ -1,6 +1,6 @@
 //your code here
 const imgContainer= document.getElementById('img-container');
-let randomImgn=1
+let randomImgn=3
 const verify=document.getElementById('verify')
 const reset=document.getElementById('reset')
 const h=document.getElementById('para')
@@ -11,7 +11,7 @@ renderMain()
 function renderMain(){
 	imgContainer.innerHTML=""
 	randomImgn=Math.floor(Math.random() *4);
-	
+	 
 	verify.style.display='none'
 reset.style.display='none'
 	
