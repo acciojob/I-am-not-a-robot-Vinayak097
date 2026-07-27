@@ -1,6 +1,6 @@
 //your code here
 const imgContainer= document.getElementById('img-container');
-const randomImgn=Math.floor(Math.random() *4);
+let randomImgn=1
 const verify=document.getElementById('verify')
 const reset=document.getElementById('reset')
 const h=document.getElementById('h')
@@ -10,6 +10,7 @@ let selectedimg=[];
 renderMain()
 function renderMain(){
 	imgContainer.innerHTML=""
+	randomImgn=Math.floor(Math.random() *4);
 	h.textContent="Please click on the identical tiles to verify that you are not a robot."
 	verify.style.display='none'
 reset.style.display='none'
